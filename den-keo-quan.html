@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đèn Kéo Quân 3D - Đặng Anh Tiến (231A010532)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="student-profile-bar">
+        <img src="images/avatar.jpg" alt="Ảnh đại diện Đặng Anh Tiến" class="header-avatar">
+        <div class="student-badge">
+          <strong>Sinh viên:</strong> Đặng Anh Tiến &nbsp;|&nbsp;
+          <strong>Mã SV:</strong> <span id="studentIdDisplay">231A010532</span>
+        </div>
+      </div>
+      <h1>ĐÈN KÉO QUÂN 3D - BÀI TẬP 24</h1>
+      <p>Học phần: Lập trình Web (HTML5 - CSS3 - JavaScript)</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="container nav-list">
+      <a href="index.html">Trang chủ (Bài 24)</a>
+      <a href="den-keo-quan.html" class="active">Đèn kéo quân 3D</a>
+      <a href="bt17.html">Bài tập 17</a>
+      <a href="bt18.html">Bài tập 18</a>
+      <a href="bt19.html">Bài tập 19</a>
+      <a href="bt20.html">Bài tập 20</a>
+      <a href="bt21.html">Bài tập 21</a>
+      <a href="bt22.html">Bài tập 22</a>
+    </div>
+  </nav>
+
+  <main class="container main-content">
+    <section class="card">
+      <span class="tag">Bài tập 24 • CSS3 3D &amp; JavaScript</span>
+      <h2>Mô hình Đèn Kéo Quân 6 Mặt Xoay 3D</h2>
+      <p>Rê chuột vào đèn để <strong>tạm dừng</strong>, đưa chuột ra ngoài để <strong>tiếp tục quay</strong>, hoặc sử dụng bảng điều khiển bên dưới.</p>
+
+      <div class="lantern-stage">
+        <div class="scene-3d">
+          <div class="lantern-carousel" id="lanternCarousel">
+            <div class="lantern-face"><img src="images/photo1.jpg" alt="Mặt 1"></div>
+            <div class="lantern-face"><img src="images/photo2.jpg" alt="Mặt 2"></div>
+            <div class="lantern-face"><img src="images/photo3.jpg" alt="Mặt 3"></div>
+            <div class="lantern-face"><img src="images/photo4.jpg" alt="Mặt 4"></div>
+            <div class="lantern-face"><img src="images/photo5.jpg" alt="Mặt 5"></div>
+            <div class="lantern-face"><img src="images/photo6.jpg" alt="Mặt 6"></div>
+          </div>
+        </div>
+
+        <div class="lantern-controls">
+          <button type="button" id="toggleSpinBtn" class="btn btn-primary">⏸ Tạm dừng</button>
+          <button type="button" id="reverseDirBtn" class="btn btn-outline">↺ Đảo chiều quay</button>
+          <label style="color:#f8fafc; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.12); padding:8px 14px; border-radius:8px;">
+            Tốc độ:
+            <input type="range" id="speedRange" min="4" max="30" value="16">
+            <span id="speedLabel">16s / vòng</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="index.html" class="btn btn-outline">← Quay về Trang chủ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Đặng Anh Tiến • Mã SV: <span class="footer-mssv">231A010532</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/lantern.js"></script>
+</body>
+</html>
